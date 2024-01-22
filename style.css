@@ -1,0 +1,406 @@
+body {
+    background-color: #C291F2;
+    font-family: Helvetica, sans-serif;
+    margin: 0 0;
+}
+
+/* header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #564D8C;
+    font-family: helvetica, sans serif;
+        font-size: large;
+}
+/* nav section */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    padding: 0 40px;
+    
+}
+
+.nav-item {
+    padding: 0 10px;
+    
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* presentation section */
+.page-title {
+margin: 0;
+font-size: 1.75em;
+font-weight: bold;
+color: white;
+}
+
+.page-author {
+    margin: 0;
+    font-size: 1.25em;
+    color: white;
+}
+
+.knowMe p {
+    display: block;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+    float: right;
+}
+
+a {
+    &:hover {
+        color: #3CA0E7;
+    }
+}
+
+.message {
+    background-color:#564D8C;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.message h2 {
+    color: white;
+}
+
+/* button section */
+
+.message button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message button:hover {
+    background-color: #2980b9;
+    border: 2px solid #2980b9;
+}
+
+#messageOutput {
+    color: white;
+    padding: 1rem;
+}
+
+/* prensentation section */
+
+#presentation {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+width: auto;
+background-color: #C291F2;
+}
+
+#knowMe {
+    padding: 10px;
+    margin: 10rem;
+    border: inset 10px #F1C2F2;
+}
+
+
+.myNameIs {
+    color: white;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+}
+
+.myName {
+    color:white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+
+} 
+
+.webDeveloper {
+    color: white;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+}
+
+#aboutMe {
+    text-align: center;
+    background-color: #564D8C;
+    margin: 4rem;
+    color: white;
+    padding: 2rem;
+}
+
+/* Skills section */
+
+#skills {
+    color:white;
+    margin: 4rem;
+    
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7f72c8;
+    padding: 2rem;
+}
+
+.skills-title {
+    text-align: center;
+        background-color: #564D8C;
+        padding: 2rem;
+}
+
+.skills-container h3 {
+    padding: 2rem;
+}
+
+.coding,
+.graphisme {
+    flex: 1;
+    text-align: center;
+}
+
+.skillsName {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    /* Alignement du texte à gauche */
+    background-color: #564D8C;
+    padding: 2rem;
+}
+
+.skillsName img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* Pour rendre les images rondes, ajustez selon vos préférences */
+    display: block;
+    /* Élimine l'espace sous l'image */
+    margin: 0 auto;
+    /* Centre l'image horizontalement */
+}
+
+/* projects section */
+
+#projects {
+    background-color: #7f72c8;
+    color: white;
+    margin: 4rem;
+}
+
+.projects-title {
+    text-align: center;
+        background-color: #564D8C;
+        padding: 2rem;
+}
+
+.projects-title h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+}
+
+#projects h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#projects p {
+    text-align: center;
+}
+
+#projects img {
+    width: 300px;
+    height: 200px;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+    
+}
+
+.project {
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #564D8C;
+        align-items: center;
+
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+/* form section */
+
+form p {
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+        cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+        border: 2px solid #2980b9;
+}
+
+#messageOutput {
+    color: white;
+    padding: 1rem;
+}
+
+
+/*  */
+/* Ajout de styles pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+
+    /* Ajoutez ici les styles spécifiques pour les écrans de petite taille */
+    header {
+        padding: 10px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .knowMe,
+    .message {
+        margin: 1rem;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    #skills {
+        margin: 2rem;
+    }
+}
+
+/* Ajout de styles pour les écrans de très petite taille */
+@media only screen and (max-width: 600px) {
+
+    /* Ajoutez ici les styles spécifiques pour les écrans de très petite taille */
+    .knowMe,
+    .message {
+        margin: 0.5rem;
+    }
+
+.project img {
+    justify-content: center;
+    justify-items: center;
+}
+
+    .gallery img{
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+    }
+
+
+    #knowMe,
+    .message,
+    .projects-title,
+    #skills {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        margin: 2rem;
+    }
+}

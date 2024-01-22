@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about-me">About Me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="presentation">
+        <div class="background">
+            <div class="knowMe" id="knowMe">
+                <p class="myNameIs">I my name is</p>
+                <p class="myName">Guillaume Coquemont</p>
+                <p class="webDeveloper">And I'm a Web Developer</p>
+            </div>
+            <div class="message">
+                <h2>Send a message</h2>
+                <button onclick="genererMessage()">Generate a message</button>
+                <p id="messageOutput"></p>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+    <main>
+        <section id="aboutMe">
+            <div class="about-me-container">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-title">
+                <h2>Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+            <div class="gallery">
+                <div class="project">
+                    <img src="./img/piano player.png" alt="Projet 1">
+                    <div class="project-info">
+                        <h3>Piano player</h3>
+                        <p>An interactive game to help beginner-level piano students study. A piano player with DOM
+                            events in JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./img/tsunami coffee.png" alt="Projet 2">
+                    <div class="project-info">
+                        <h3>Tsunami coffee</h3>
+                        <p>A sample page from Codecademy called Tsunami Coffee for responsive web design practice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills-title">
+                <h2>Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo
+                    consequat.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="coding">
+                    <h3>Coding</h3>
+                    <div class="skillsName">
+                        <h4>HTML</h4>
+                        <img src="./img/html-logo.png" alt="">
+                        <p>Level <br> Intermediate</p>
+                    </div>
+
+                    <div class="skillsName">
+                        <h4>CSS</h4>
+                        <img src="./img/css-logo.png" alt="">
+                        <p>Level <br> Intermediate</p>
+                    </div>
+
+                    <div class="skillsName">
+                        <h4>Javascript</h4>
+                        <img src="./img/javascript-logo.png" alt="">
+                        <p>Level <br> Basic</p>
+                    </div>
+
+                    <div class="skillsName">
+                        <h4>Github</h4>
+                        <img src="./img/github-logo.png" alt="">
+                        <p>Level <br> Basic</p>
+                    </div>
+                </div>
+
+                <div class="graphisme">
+                    <h3>Design</h3>
+                    <div class="skillsName">
+                        <h4>Illustrator</h4>
+                        <img src="./img/illustrator-logo.png" alt="">
+                        <p>Level <br> Confirmed</p>
+                    </div>
+
+                    <div class="skillsName">
+                        <h4>Photoshop</h4>
+                        <img src="./img/photoshop-logo.png" alt="">
+                        <p>Level <br> Confirmed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form>
+                <p>Contact me</p>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <div class="submit">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    </section>
+
+</body>
+
+</html>
